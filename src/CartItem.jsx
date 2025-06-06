@@ -20,8 +20,16 @@ const CartItem = ({ onContinueShopping }) => {
     return total;
   };
 
-const handleCheckoutShopping = (e) => { //Code not needed for this project"
-  alert('Functionality to be added for future reference');
+
+  const handleContinueShopping = (e) => {
+    e.preventDefault();
+    if (onContinueShopping) {
+        onContinueShopping(e);
+    }
+  };
+
+    const handleCheckoutShopping = (e) => { //Code not needed for this project"
+        alert('Functionality to be added for future reference');
 };
 
 
